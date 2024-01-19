@@ -51,7 +51,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetBreadPrice_ReturnPriceWithDiscount_Int()
+    public void PriceQuantityDivisibleByThree_ReturnPriceWithDiscount_Int()
     {
       //Arrange
       int test_quantity = 3;
@@ -62,5 +62,19 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expect_price, result);
     }
+
+    [TestMethod]
+    public void PriceQuantityWhenModuloTwo_ReturnPriceWithDiscount_Int()
+    {
+      //Arrange
+      int test_quantity = 4;
+      Bread testOrder = new Bread(test_quantity);
+      int expect_price = 15;
+      //Act
+      int result = testOrder.BreadPrice();
+      //Assert
+      Assert.AreEqual(expect_price, result);
+    }
+
   }
 }
