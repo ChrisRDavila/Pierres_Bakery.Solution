@@ -11,7 +11,14 @@ namespace Bakery.Models
 
     public int PastryPrice()
     {
+      if(QuantityPastry % 4 == 0)
+      {
+        pastry_price = (QuantityPastry - (QuantityPastry / 4)) * 2;
+      }
+      else if (QuantityPastry < 4)
+      {
       pastry_price = QuantityPastry * 2;
+      }
       return pastry_price;
     }
   }
