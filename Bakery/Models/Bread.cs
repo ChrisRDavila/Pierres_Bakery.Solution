@@ -13,7 +13,14 @@ namespace Bakery.Models
 
     public int BreadPrice()
     {
-      bread_price = QuantityBread * 5;
+      if(QuantityBread % 3 == 0)
+      {
+        bread_price = (QuantityBread - (QuantityBread / 3)) * 5;
+      }
+      else if (QuantityBread < 3)
+      {
+        bread_price = QuantityBread * 5;
+      }
       return bread_price;
     }
   }
