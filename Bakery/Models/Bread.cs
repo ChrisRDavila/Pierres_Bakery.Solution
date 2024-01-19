@@ -10,5 +10,11 @@ namespace Bakery.Models
     {
       QuantityBread = _quantity;
     }
+
+    public int BreadPrice()
+    {
+      bread_price = QuantityBread * 5;
+      return bread_price;
+    }
   }
 }
