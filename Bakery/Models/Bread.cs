@@ -21,6 +21,17 @@ namespace Bakery.Models
       {
         bread_price = QuantityBread * 5;
       }
+      else
+      {
+        if ((QuantityBread - 1) % 3 == 0)
+        {
+          bread_price = (5 * (QuantityBread - 1))-((QuantityBread / 3) * 5) + 5;
+        }
+        else
+        {
+          return 0;
+        }
+      }
       return bread_price;
     }
   }
