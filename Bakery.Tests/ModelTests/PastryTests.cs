@@ -41,13 +41,30 @@ namespace Bakery.Tests
     public void GetPastryUnitPrice_ReturnPastryUnitPrice_Int()
     {
       //Arrange
-      int test_quantity = 1;
+      int test_quantity = 3;
       Pastry testOrder = new Pastry(test_quantity);
-      int expect_price = 2;
+      int expect_price = 6;
       //Act
       int result = testOrder.PastryPrice();
       //Assert
       Assert.AreEqual(expect_price, result);
     }
+
+    [TestMethod]
+    public void PastryQuantityDivisibleByFour_ReturnPriceWithDiscount_Int()
+    {
+      //Arrange
+      int test_quantity = 12;
+      Pastry testOrder = new Pastry(test_quantity);
+      int expected_total = 18;
+      //Act
+      int result = testOrder.PastryPrice();
+      //Assert
+      Assert.AreEqual(expected_total, result);
+    }
   }
 }
+
+//check math for pastry
+// 1 2 3 4    5 6  7  8     9 10 11 12
+// 2 4 6 free 8 10 12 free  14 16 18 free
