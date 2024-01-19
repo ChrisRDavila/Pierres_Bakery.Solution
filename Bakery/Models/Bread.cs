@@ -29,7 +29,7 @@ namespace Bakery.Models
         }
         else
         {
-          return 0;
+          bread_price = (5 * (QuantityBread - 2))-((QuantityBread / 3) * 5) + 10;
         }
       }
       return bread_price;
