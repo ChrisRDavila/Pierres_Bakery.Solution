@@ -14,27 +14,27 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetBreadPrice_ReturnPrice_Int()
+    public void GetQuantityBread_ReturnOrderBread_Int()
     {
       //Arrange
-      int breadPrice = 5;
-      Bread testBread = new Bread(breadPrice);
+      int test_quantity = 5;
+      Bread testOrder = new Bread(test_quantity);
       //Act
-      int result = testBread.BreadPrice;
+      int result = testOrder.QuantityBread;
       //Assert
-      Assert.AreEqual(breadPrice, result);
+      Assert.AreEqual(test_quantity, result);
     }
 
     [TestMethod]
-    public void SetBreadPrice_SetValueOfBreadPrice_Void()
+    public void SetQuantityBread_SetValueOfBreadOrder_Void()
     {
       //Arrange
-      Bread testBread = new Bread(5);
-      int updatedBreadPrice = 10;
+      Bread testOrder = new Bread(5);
+      int newQuantity = 10;
       //Act
-      testBread.BreadPrice = updatedBreadPrice;
+      testOrder.QuantityBread = newQuantity;
       //Assert
-      Assert.AreEqual(updatedBreadPrice, testBread.BreadPrice);
+      Assert.AreEqual(newQuantity, testOrder.QuantityBread);
     }
   }
 }
