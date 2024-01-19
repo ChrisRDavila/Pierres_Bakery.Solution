@@ -4,9 +4,10 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public Bread()
+    public int BreadPrice { get; set; }
+    public Bread(int bread_cost)
     {
-      // Constructor logic goes here
+      BreadPrice = bread_cost;
     }
   }
 }
