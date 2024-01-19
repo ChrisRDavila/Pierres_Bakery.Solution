@@ -4,6 +4,9 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    //bread class code
+    public Bread()
+    {
+      // Constructor logic goes here
+    }
   }
 }
