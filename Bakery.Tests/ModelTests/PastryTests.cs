@@ -88,6 +88,19 @@ namespace Bakery.Tests
       //Assert
       Assert.AreEqual(expected_total, result);
     }
+
+    [TestMethod]
+      public void PastryQuantityWhenRemainderOne_ReturnPriceWithDiscount_Int()
+    {
+      //Arrange
+      int test_quantity = 7;
+      Pastry testOrder = new Pastry(test_quantity);
+      int expected_total = 12;
+      //Act
+      int result = testOrder.PastryPrice();
+      //Assert
+      Assert.AreEqual(expected_total, result);
+    }
     
   }
 }
