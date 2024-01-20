@@ -4,9 +4,9 @@ namespace Bakery.Models
   {
     public int QuantityPastry { get; set; }
     private int pastry_price = 0;
-    public Pastry(int _quantity)
+    public Pastry(int _pquantity)
     {
-      QuantityPastry = _quantity;
+      QuantityPastry = _pquantity;
     }
 
     public int PastryPrice()

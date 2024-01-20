@@ -1,4 +1,4 @@
-namespace PierresBakery.UserInterfaceModels
+namespace Bakery.UserInterfaceModels
 {
   class WelcomeBanner
   {
@@ -43,13 +43,13 @@ namespace PierresBakery.UserInterfaceModels
                                                                         
         ┌─┐┌─┐┬  ┌─┐┬ ┬┬  ┌─┐┌┬┐┬┌┐┌┌─┐
         │  ├─┤│  │  │ ││  ├─┤ │ │││││ ┬
-        └─┘┴ ┴┴─┘└─┘└─┘┴─┘┴ ┴ ┴ ┴┘└┘└─┘
+........└─┘┴ ┴┴─┘└─┘└─┘┴─┘┴ ┴ ┴ ┴┘└┘└─┘
   ";
   }
 
-  class Bread
+  class BannerBread
   {
-    public static string Bread { get; } = @"
+    public static string Image { get; } = @"
             ▓▓▓▓▓▓    ▓▓▓▓▓▓                                    
           ▓▓░░░░░░▓▓▓▓░░░░░░▓▓                                  
         ▓▓░░░░░░░░░░░░░░░░░░░░▓▓                                
@@ -66,9 +66,9 @@ namespace PierresBakery.UserInterfaceModels
   ";
   }
 
-  class Pastry
+  class BannerPastry
   {
-    public static string Pastry { get; } = @"
+    public static string Image { get; } = @"
              (
               )
          __..---..__
