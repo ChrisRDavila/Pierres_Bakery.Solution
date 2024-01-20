@@ -67,17 +67,19 @@ namespace Bakery.Tests
     public void PastryQuantityWhenRemainderThree_ReturnPriceWithDiscount_Int()
     {
       //Arrange
-      int test_quantity = 5;
+      int test_quantity = 13;
       Pastry testOrder = new Pastry(test_quantity);
-      int expected_total = 8;
+      int expected_total = 20;
       //Act
       int result = testOrder.PastryPrice();
       //Assert
       Assert.AreEqual(expected_total, result);
     }
+
+    
   }
 }
 
 //check math for pastry
-// 1 2 3 4    5 6  7  8     9 10 11 12
-// 2 4 6 free 8 10 12 free  14 16 18 free
+// 1 2 3 4    5 6  7  8     9 10 11 12    13 14 15 16    17 18 19 20
+// 2 4 6 free 8 10 12 free  14 16 18 free 20 22 24 free  26 28 30 free
