@@ -27,6 +27,10 @@ namespace Bakery.Models
       {
         pastry_price = ((QuantityPastry - 2) - ((QuantityPastry - 2) / 4)) * 2 + 4;
       }
+      else if ((QuantityPastry - 3) % 4 == 0)
+      {
+        pastry_price = ((QuantityPastry - 3) - ((QuantityPastry - 3) / 4)) * 2 + 6;
+      }
       return pastry_price;
     }
   }

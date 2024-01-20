@@ -93,9 +93,9 @@ namespace Bakery.Tests
       public void PastryQuantityWhenRemainderOne_ReturnPriceWithDiscount_Int()
     {
       //Arrange
-      int test_quantity = 7;
+      int test_quantity = 15;
       Pastry testOrder = new Pastry(test_quantity);
-      int expected_total = 12;
+      int expected_total = 24;
       //Act
       int result = testOrder.PastryPrice();
       //Assert
